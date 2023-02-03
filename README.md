@@ -1,8 +1,8 @@
-# Projeto-DataScience-Airbnb
+# 💻 Projeto-DataScience-Airbnb
 
 <img src="https://cdn.discordapp.com/attachments/965066624556232737/985353975043862568/Captura_de_tela_de_2022-06-11_22-23-54.png" >
 
-## Descrição:
+## 📄 Descrição:
 
 O projeto consiste na criação de um modelo que seja rápido e que possibilite que uma pessoa comum possa ter uma previsão dada por um Inteligência artificial que lhe dirá quanto deve cobrar pela diária do seu imóvel ou de outra pessoa, desde que este esteja localizado no Rio de Janeiro
 
@@ -12,11 +12,9 @@ Depois da análise e correção é feita uma transformação dos dados em 0 e 1 
 
 Por fim o modelo é salvo em um formato joblib que é lido no arquivo de deploy que configura o servidor de utilização do modelo para que qualquer pessoa possa usar.
 
-## Passo a Passo de Utilização:
+## 👣 Passo a Passo de Utilização:
 
-### No futuro irei criar uma maneira mais amigável de uma pessoa comum ter acesso a esse modelo como acessando um site por exemplo, mas o modo que fiz é 100% funcional podendo demorar um pouco dependendo da sua máquina.
-
-
+#### No futuro irei criar uma maneira mais amigável de uma pessoa comum ter acesso a esse modelo como acessando um site por exemplo, mas o modo que fiz é 100% funcional podendo demorar um pouco dependendo da sua máquina.
 
 **1 - Primeiramente será necessário que você tenha em seu computador o Python instalado e também o Anaconda, segue o link para download dessas tecnologias:**
 
