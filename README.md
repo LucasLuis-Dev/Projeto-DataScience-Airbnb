@@ -12,17 +12,30 @@ Depois da análise e correção é feita uma transformação dos dados em 0 e 1 
 
 Por fim o modelo é salvo em um formato joblib que é lido no arquivo de deploy que configura o servidor de utilização do modelo para que qualquer pessoa possa usar.
 
+### 🎯 Tecnologias
+
+- Python
+- Pandas
+- Sklearn
+- Numpy
+- Seaborn
+- Matplotlib
+- Plotly
+- Joblib
+- Streamlit
+
+
+
 ## 👣 Passo a Passo de Utilização:
 
-#### No futuro irei criar uma maneira mais amigável de uma pessoa comum ter acesso a esse modelo como acessando um site por exemplo, mas o modo que fiz é 100% funcional podendo demorar um pouco dependendo da sua máquina.
 
-**1 - Primeiramente será necessário que você tenha em seu computador o Python instalado e também o Anaconda, segue o link para download dessas tecnologias:**
+1 - Primeiramente será necessário que você tenha em seu computador o Python instalado e também o Anaconda, segue o link para download dessas tecnologias:
 
 https://www.anaconda.com/products/distribution
 
 https://www.python.org/downloads/
 
-**2 - Depois de instalar as tecnologias será necessário instalar as bibliotecas que serão utilizadas no modelo do projeto, para isso você deverá abrir o seu terminal ou cmd e digitar os seguintes códigos:**
+2 - Depois de instalar as tecnologias será necessário instalar as bibliotecas que serão utilizadas no modelo do projeto, para isso você deverá abrir o seu terminal ou cmd e digitar os seguintes códigos:
 
 `pip install pandas`
 `pip install numpy`
@@ -33,27 +46,27 @@ https://www.python.org/downloads/
 `pip install joblib`
 `pip install streamlit`
 
-**3 - Após isso você deve baixar um clone deste repositório para que possa ter acesso ao programa e a base de dados**
+3 - Após isso você deve baixar um clone deste repositório para que possa ter acesso ao programa e a base de dados
 
-**4 - Em seguida você deve abrir o jupyter-notebook, digitando na barra de pesquisa do Windows e clicando no programa ou digitando `jupyter-notebook`no terminal caso você esteja usando Linux**
+4 - Em seguida você deve abrir o jupyter-notebook, digitando na barra de pesquisa do Windows e clicando no programa ou digitando `jupyter-notebook`no terminal caso você esteja usando Linux
 
-**6 - Acessando jupyter dentro a interface que ele criar ao abrir, você irá procurar a pasta onde o clone do repositório foi baixado e abrir o arquivo onde se encontra o modelo, arquivo este que possui o nome "Solução Airbnb Rio.ipynb"**
+6 - Acessando jupyter dentro a interface que ele criar ao abrir, você irá procurar a pasta onde o clone do repositório foi baixado e abrir o arquivo onde se encontra o modelo, arquivo este que possui o nome "Solução Airbnb Rio.ipynb"
 
-**7 - Após abrir o arquivo será necessário que você mude apenas os diretórios onde serão coletadas as bases de dados, pois no seu computador o caminho do diretório onde se encontrará o arquivo da base dados será diferente**
+7 - Após abrir o arquivo será necessário que você mude apenas os diretórios onde serão coletadas as bases de dados, pois no seu computador o caminho do diretório onde se encontrará o arquivo da base dados será diferente
 
-**8 - Agora é apenas necessário executar todas as celulas onde estão os códigos, você pode fazer isso clicando em cell no canto superior e selecionando RUN ALL (isso poderá demorar alguns minutos depedendo da sua máquina), como resultado final ele gerará um arquivo em seu computador que possui em torno de 5gb**
+8 - Agora é apenas necessário executar todas as celulas onde estão os códigos, você pode fazer isso clicando em cell no canto superior e selecionando RUN ALL (isso poderá demorar alguns minutos depedendo da sua máquina), como resultado final ele gerará um arquivo em seu computador que possui em torno de 5gb
 
 <img src="https://cdn.discordapp.com/attachments/965066624556232737/985357769244823592/Captura_de_tela_de_2022-06-11_22-37-35.png" >
 
-**9 - Depois disso você deve acessar a aba do navegador onde está a interface do jupyter e abrir o arquivo com nome "DeploProjetoAirbnb.ipynb" , lá você  também deve mudar apenas o caminho do diretório da variável chamada modelo, passando o caminho do arquivo "Modelo.joblib" que foi gerado rodando os códigos passados**
+9 - Depois disso você deve acessar a aba do navegador onde está a interface do jupyter e abrir o arquivo com nome "DeploProjetoAirbnb.ipynb" , lá você  também deve mudar apenas o caminho do diretório da variável chamada modelo, passando o caminho do arquivo "Modelo.joblib" que foi gerado rodando os códigos passados
 
 <img src="https://cdn.discordapp.com/attachments/965066624556232737/985358250780262420/Captura_de_tela_de_2022-06-11_22-41-37.png" >
 
-**10 - Após isso você irá salvar e programa clicando no botão com simbolo de cartão de memória no canto superior esquerdo, depois de salvo você clicará na opção FILE também localizada no canto superior esquerdo e selecionará "download as" e clicará em "Python(py)", assim o programa será baixado no seu computador**
+10 - Após isso você irá salvar e programa clicando no botão com simbolo de cartão de memória no canto superior esquerdo, depois de salvo você clicará na opção FILE também localizada no canto superior esquerdo e selecionará "download as" e clicará em "Python(py)", assim o programa será baixado no seu computador
 
 <img src="https://cdn.discordapp.com/attachments/965066624556232737/985358682713899058/Captura_de_tela_de_2022-06-11_22-43-16.png" >
 
-**11 - Depois de baixado, você ira abrir o seu terminal ou cmd e digitar os seguintes códigos:**
+11 - Depois de baixado, você ira abrir o seu terminal ou cmd e digitar os seguintes códigos:
 
 `cd Downloads`
 
@@ -63,6 +76,6 @@ https://www.python.org/downloads/
 
 <img src="https://cdn.discordapp.com/attachments/965066624556232737/985359668408905728/Captura_de_tela_de_2022-06-11_22-45-19.png" >
 
-**12 - Com isso o servidor será aberto e você terá acesso a uma aba no navegador em que você poderá preencher as informações do imóvel, clicando no botão de previsão após preencher todas as informações e esperando alguns minutos você terá acesso a previsão do preço da diária do imóvel feita pela inteligência artificial que já foi treinada.**
+12 - Com isso o servidor será aberto e você terá acesso a uma aba no navegador em que você poderá preencher as informações do imóvel, clicando no botão de previsão após preencher todas as informações e esperando alguns minutos você terá acesso a previsão do preço da diária do imóvel feita pela inteligência artificial que já foi treinada.
 
 <img src="https://cdn.discordapp.com/attachments/965066624556232737/985360016922005575/Captura_de_tela_de_2022-06-11_22-48-35.png" >
